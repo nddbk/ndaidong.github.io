@@ -1,37 +1,63 @@
-## Welcome to GitHub Pages
+## About me
 
-You can use the [editor on GitHub](https://github.com/ndaidong/ndaidong.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Create webpage in "About.me" style.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Built with my own static site generator.
 
-### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+# Usage
 
-```markdown
-Syntax highlighted code block
+```
+git clone https://github.com/ndaidong/ndaidong.github.io.git YOURNAME
+cd YOURNAME
+git checkout dev
+npm i
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+#### Setup more resources
 
-### Jekyll Themes
+If you prefer using npm packages, just use `npm install` as normal. Don't care about this.
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/ndaidong/ndaidong.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+Specify CSS and JavaScript file through `package.json -> vendor`, then:
 
-### Support or Contact
+```
+npm run setup
+```
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+
+#### Dev mode
+
+
+Modify the contents under `/src` to develop your own site, then:
+
+
+```
+npm start
+````
+
+Access `http://localhost:8080` to view result.
+
+
+#### Build
+
+```
+npm run build
+```
+
+New website will be processed and placed in `/dist`.
+
+
+# Tech stacks
+
+- [RollupJS](https://rollupjs.org/):
+  - [Babel](http://babeljs.io/)
+  - [ES2015](http://es6-features.org/)
+- [PostCSS](http://postcss.org/):
+  - [CSSNext](http://cssnext.io/)
+- [Pug](https://pugjs.org)
+
+
+# License
+
+The MIT License (MIT)
