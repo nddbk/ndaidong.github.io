@@ -1,0 +1,71 @@
+{
+  "meta": {
+    "name": "ndaidong",
+    "title": "Dong Nguyen",
+    "description": "About Dong Nguyen",
+    "keywords": "",
+    "image": "/images/about-bg.png",
+    "author": "@ndaidong",
+    "url": "https://ndaidong.github.io",
+    "canonical": "",
+    "themeColor": "#2F3BA2"
+  },
+  "about": {
+    "name": "Dong Nguyen",
+    "avatar": "/images/ndaidong.png",
+    "role": "Web Developer",
+    "tags": "#html #css #javascript #node #python #go #linux",
+    "links": [
+      {
+        "icon": "icon-home",
+        "title": "Homepage",
+        "href": "https://ndaidong.xyz"
+      },
+      {
+        "icon": "icon-twitter",
+        "title": "Twitter",
+        "href": "https://twitter.com/ndaidong"
+      },
+      {
+        "icon": "icon-github",
+        "title": "GitHub",
+        "href": "https://github.com/ndaidong"
+      },
+      {
+        "icon": "icon-codeopen",
+        "title": "CodePen",
+        "href": "https://codepen.io/ndaidong"
+      },
+      {
+        "icon": "icon-gplus",
+        "title": "Google+",
+        "href": "https://plus.google.com/113270353763049199537"
+      },
+      {
+        "icon": "icon-linkedin",
+        "title": "LinkedIn",
+        "href": "https://www.linkedin.com/in/ndaidong"
+      },
+      {
+        "icon": "icon-angellist",
+        "title": "AngelList",
+        "href": "https://angel.co/ndaidong"
+      },
+      {
+        "icon": "icon-medium",
+        "title": "Medium",
+        "href": "https://medium.com/@ndaidong"
+      },
+      {
+        "icon": "icon-quora",
+        "title": "Quora",
+        "href": "https://www.quora.com/profile/Dong-Nguyen-5"
+      },
+      {
+        "icon": "icon-stackoverflow",
+        "title": "StackOverflow",
+        "href": "https://stackoverflow.com/users/2658916/dong-nguyen"
+      }
+    ]
+  }
+}
