@@ -11,8 +11,6 @@ const {
   error,
 } = require('./logger');
 
-const transpileJS = require('./transpileJS');
-
 const rollupify = async (input) => {
   info('Rollup start...');
   try {
@@ -45,7 +43,7 @@ const rollupify = async (input) => {
 
     info('Rolling finished.');
 
-    return transpileJS(code);
+    return code;
   } catch (err) {
     error(err);
     return err;

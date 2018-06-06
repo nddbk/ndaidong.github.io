@@ -12,9 +12,6 @@ const {
   extname,
 } = require('path');
 
-const test = require('tape');
-
-
 const dirs = ['http', 'built'];
 
 dirs.forEach((dir) => {
@@ -28,4 +25,3 @@ dirs.forEach((dir) => {
   }
 });
 
-test.onFinish(process.exit);

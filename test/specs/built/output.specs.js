@@ -13,7 +13,7 @@ const {
   basename,
 } = require('path');
 
-const test = require('tape');
+const test = require('tap').test;
 
 const config = require('../../../builder/configs');
 
