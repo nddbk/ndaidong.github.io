@@ -14,8 +14,13 @@
     "name": "Dong Nguyen",
     "avatar": "/images/ndaidong.png",
     "role": "Web Developer",
-    "tags": "#html #css #javascript #node #python #go #linux",
+    "tags": "html, css, javascript, node, go, python, pytorch, *nix",
     "links": [
+      {
+        "icon": "icon-home",
+        "title": "Homepage",
+        "href": "https://news.ctdtmnhnlcndt.com"
+      },
       {
         "icon": "icon-twitter",
         "title": "Twitter",
@@ -27,19 +32,14 @@
         "href": "https://github.com/ndaidong"
       },
       {
-        "icon": "icon-home",
-        "title": "Homepage",
-        "href": "https://blog.ctdtmnhnlcndt.com"
+        "icon": "icon-codeopen",
+        "title": "CodePen",
+        "href": "https://codepen.io/ndaidong"
       },
       {
         "icon": "icon-medium",
         "title": "Medium",
         "href": "https://medium.com/@ndaidong"
-      },
-      {
-        "icon": "icon-codeopen",
-        "title": "CodePen",
-        "href": "https://codepen.io/ndaidong"
       },
       {
         "icon": "icon-linkedin",
