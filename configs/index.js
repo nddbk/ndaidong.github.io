@@ -1,16 +1,16 @@
-/**
- * configs/index
- * @ndaidong
- **/
+import {
+  genid,
+} from 'bellajs';
 
-const {
+import {
   name,
   version,
-} = require('../../package.json');
+} from '../package.json';
 
-const {
+import {
   warning,
-} = require('../utils/logger');
+} from '../utils/logger';
+
 
 const env = process.env || {}; // eslint-disable-line no-process-env
 
@@ -26,7 +26,8 @@ const env = process.env || {}; // eslint-disable-line no-process-env
 });
 
 const config = {
-  ENV: env.NODE_ENV || 'development',
+  ENV: env.NODE_ENV || 'dev',
+  rev: genid(),
 };
 
 config.name = name;
@@ -38,6 +39,9 @@ config.url = env.URL || `${config.host}:${config.port}`;
 
 config.srcDir = 'src';
 config.distDir = 'dist';
+config.staticDir = 'src/static';
 config.siteDataFile = 'site.conf.json';
 
-module.exports = config;
+export const getConfigs = () => {
+  return Object.assign({}, config);
+};

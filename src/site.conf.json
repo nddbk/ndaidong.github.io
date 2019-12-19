@@ -2,7 +2,7 @@
   "meta": {
     "name": "ndaidong",
     "title": "Dong Nguyen",
-    "description": "About Dong Nguyen",
+    "description": "About Dong Nguyen, a full stack developer with more than 10 years of experience in web development and a little about computer vision, nlp, data mining",
     "keywords": "",
     "image": "/images/about-bg.png",
     "author": "@ndaidong",
@@ -13,8 +13,8 @@
   "about": {
     "name": "Dong Nguyen",
     "avatar": "/images/ndaidong.png",
-    "role": "Web Developer",
-    "tags": "html, css, javascript, node, go, python, pytorch, *nix",
+    "role": "Full-stack Developer",
+    "tags": "html, css, javascript, node, go, python, ai, cv, nlp",
     "links": [
       {
         "icon": "icon-home",
@@ -51,7 +51,6 @@
         "title": "AngelList",
         "href": "https://angel.co/ndaidong"
       },
-
       {
         "icon": "icon-quora",
         "title": "Quora",

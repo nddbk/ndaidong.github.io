@@ -3,7 +3,7 @@
 const getEventName = (elt) => {
   let t;
 
-  let transitions = {
+  const transitions = {
     transition: 'transitionend',
     OTransition: 'oTransitionEnd',
     MozTransition: 'transitionend',
@@ -20,7 +20,7 @@ const getEventName = (elt) => {
 };
 
 export default (el, callback, timeout = 3000) => {
-  let ev = getEventName(el);
+  const ev = getEventName(el);
 
   if (ev) {
     el.addEventListener(ev, callback);

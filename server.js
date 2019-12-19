@@ -1,37 +1,17 @@
-/**
- * server.js
- * app start
-**/
+// server.js
 
-const express = require('express');
+import express from 'express';
 
-const {
-  logger,
-  renderer,
-} = require('./builder/utils');
+import {getConfigs} from './configs';
+import {info} from './utils/logger';
+import {render} from './utils/renderer';
 
-const {
-  info,
-} = logger;
-
-const {
-  port,
-  url,
-} = require('./builder/configs');
-
+const conf = getConfigs();
 const app = express();
 
-app.use(express.static('src/static'));
-app.use(renderer);
+app.use(express.static(conf.staticDir));
+app.use(render);
 
-app.use((req, res) => {
-  info(`Nothing at the path "${req.path}"`);
-  return res.status(404).send('404: Page not found');
+app.listen(conf.port, () => {
+  info(`Server started at ${conf.url}`);
 });
-
-app.listen(port, () => {
-  info(`Server started running at ${port}`);
-  info(url);
-});
-
-module.exports = app;

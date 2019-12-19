@@ -1,12 +1,10 @@
 // delFile
 
-const {
+import {
   existsSync,
   unlinkSync,
-} = require('fs');
+} from 'fs';
 
-const delFile = (f) => {
+export default (f) => {
   return existsSync(f) ? unlinkSync(f) : false;
 };
-
-module.exports = delFile;

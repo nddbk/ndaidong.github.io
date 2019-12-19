@@ -1,12 +1,11 @@
 // readFile
 
-const {
+import {
   existsSync,
   readFileSync,
-} = require('fs');
+} from 'fs';
 
-const readFile = (f) => {
+export default (f) => {
   return existsSync(f) ? readFileSync(f, 'utf8') : '';
 };
 
-module.exports = readFile;

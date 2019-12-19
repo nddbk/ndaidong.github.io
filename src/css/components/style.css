@@ -37,6 +37,7 @@ main {
 
 .box {
   width: 94%;
+  max-width: 500px;
   height: var(--boxHeight);
   padding: 10px;
   border-radius: 6px;

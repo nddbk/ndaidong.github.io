@@ -1,11 +1,11 @@
 // utils / pickOne
 
 import {
-  random,
+  randint,
 } from 'bellajs';
 
 export default (arr = []) => {
-  let vals = [...arr];
-  let rand = random(0, vals.length - 1);
+  const vals = [...arr];
+  const rand = randint(0, vals.length - 1);
   return vals[rand];
 };
