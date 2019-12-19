@@ -25,7 +25,7 @@ npm install
 Modify the contents under `/src` to develop your own site, then:
 
 
-```
+```bash
 npm start
 ````
 
@@ -38,7 +38,7 @@ Access `http://localhost:7856` to view result.
 
 #### Build
 
-```
+```bash
 npm run build
 ```
 
@@ -56,15 +56,10 @@ Template data that was stored at `/src/site.conf.json`, will be automatically pa
 No reason to care about that! Everything should fresh and come natively. In dev mode, you always get the newest content display.
 
 
-#### Babel
-
-The configs set at `package.json -> babel`;
-
-
-# Tech stacks
+# Tools
 
 - [RollupJS](https://rollupjs.org/)
-- [PostCSS](http://postcss.org/)
+- [PostCSS](https://postcss.org/)
 - [Pug](https://pugjs.org)
 
 
